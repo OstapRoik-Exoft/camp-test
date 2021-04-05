@@ -1,0 +1,10 @@
+<div *ngIf="!isContentLoaded">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="isContentLoaded">
+  <div *ngFor="let user of users">
+    <p>{{user.firstName}}</p>
+  </div>
+</div>
+
