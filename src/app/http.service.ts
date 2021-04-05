@@ -17,4 +17,12 @@ export class HttpService {
   public addUser(user): Observable<any> {
     return this.httpClient.post<any>('http://localhost:5000/api/users', user);
   }
+
+  public addUser2(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
+
+  public addUser3(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
 }
