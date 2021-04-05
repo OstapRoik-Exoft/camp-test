@@ -14,12 +14,16 @@ export class HttpService {
     return this.httpClient.get<any[]>('http://localhost:7777/api/users');
   }
 
-  public addUser(user): Observable<any> {
-    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  public getUsers2(): Observable<any[]> {
+    return this.httpClient.get<any[]>('http://localhost:7777/api/users');
   }
 
-  public addUser2(user): Observable<any> {
-    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  public getUsers3(): Observable<any[]> {
+    return this.httpClient.get<any[]>('http://localhost:7777/api/users');
+  }
+
+  public getUsers4(): Observable<any[]> {
+    return this.httpClient.get<any[]>('http://localhost:7777/api/users');
   }
 
   public addUser3(user): Observable<any> {
