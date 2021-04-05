@@ -26,7 +26,23 @@ export class HttpService {
     return this.httpClient.get<any[]>('http://localhost:7777/api/users');
   }
 
+  public addUser(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
+
+  public addUser2(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
+
   public addUser3(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
+
+  public updateUser(user): Observable<any> {
+    return this.httpClient.post<any>('http://localhost:5000/api/users', user);
+  }
+
+  public updateUser2(user): Observable<any> {
     return this.httpClient.post<any>('http://localhost:5000/api/users', user);
   }
 }
